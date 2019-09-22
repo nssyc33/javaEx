@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
+import javaEx.io.Service.ExError1;
 import javaEx.io.Service.InstanceTest;
 import javaEx.io.Service.InstanceTestBoolean;
 import javaEx.io.Service.InstanceTestInteager;
@@ -49,19 +50,20 @@ public class Main {
 //		}
 		
 		/*클래스 관계를 확인하는 부분*/
-		InstanceTest its = new InstanceTestString();
-		InstanceTest iti = new InstanceTestInteager();
-		InstanceTest itb = new InstanceTestBoolean();
-		System.out.println(its instanceof InstanceTestString);
-		System.out.println(its instanceof InstanceTestInteager);
-		System.out.println(its instanceof InstanceTestBoolean);
-		System.out.println(its.getClass());
+		/*
+		 * InstanceTest its = new InstanceTestString(); InstanceTest iti = new
+		 * InstanceTestInteager(); InstanceTest itb = new InstanceTestBoolean();
+		 * System.out.println(its instanceof InstanceTestString); System.out.println(its
+		 * instanceof InstanceTestInteager); System.out.println(its instanceof
+		 * InstanceTestBoolean); System.out.println(its.getClass());
+		 * 
+		 * int[] array = {1,2,3,4,5}; List list = Arrays.asList(array);
+		 * 
+		 * System.out.println("test");
+		 */
 		
-		int[] array = {1,2,3,4,5};
-		List list = Arrays.asList(array);
-		
-		System.out.println("test");
-		
+		ExError1 ee = new ExError1();
+		ee.Errortest();
 		
 	}
 }
