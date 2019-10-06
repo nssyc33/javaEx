@@ -5,9 +5,10 @@ import java.util.WeakHashMap;
 
 public class Main {
 
-	public static void main(String[] arg) {
+	public static void main(String[] arg) throws InterruptedException{
 		HashMap asMap = new HashMap();
 		WeakHashMap weakMap = new WeakHashMap();
+		
 		HashMap asKey = new HashMap<>();
 		HashMap weakKey = new HashMap<>();
 		asMap.put(asKey, "value");
@@ -22,6 +23,7 @@ public class Main {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			System.out.println("test");
+			throw e;
 		}
 		System.out.println("길이 확인합니다. : "+asMap.size());
 		System.out.println("길이 확인합니다. : "+weakMap.size());
