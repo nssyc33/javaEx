@@ -39,4 +39,10 @@ public class ExError2 {
 	int divide(int a, int b) {
 		return a/b; 
 	}
+	
+	public void ExceptionTest() throws RuntimeException{
+		String as = null;
+		int a = 100/0;
+	}
+	
 }
