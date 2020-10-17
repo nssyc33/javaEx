@@ -1,14 +1,7 @@
 package javaEx.io;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.List;
-
-import javaEx.io.Service.ExError1;
-import javaEx.io.Service.InstanceTest;
-import javaEx.io.Service.InstanceTestBoolean;
-import javaEx.io.Service.InstanceTestInteager;
-import javaEx.io.Service.InstanceTestString;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Main {
 
@@ -62,8 +55,14 @@ public class Main {
 		 * System.out.println("test");
 		 */
 		
-		ExError1 ee = new ExError1();
-		ee.Errortest();
+		//ExError1 ee = new ExError1();
+		//ee.Errortest();
+		try(FileReader reader = new FileReader("D://TEST.txt")){
+		    System.out.println(reader.read());
+		    
+		} catch (IOException e) {
+
+		}
 		
 	}
 }
