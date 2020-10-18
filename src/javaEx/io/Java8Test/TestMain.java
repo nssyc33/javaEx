@@ -45,6 +45,19 @@ public class TestMain {
 		stringa.accept("testtest");
 		
 		
+		System.out.println("========================================================");
+		TestVo a = new TestVo();
+		TestVoSub b = new TestVoSub();
+		
+		a.setV1("1");
+		a.setV2("2");
+		a.setV3("3");
+		
+		b.setV1("1");
+		b.setV2("2");
+		b.setV3("3");
+		
+		System.out.println("========================================================");
 		
 	}
 
