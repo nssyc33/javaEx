@@ -1,9 +1,11 @@
 package javaEx.io.Java8Test;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 import javax.swing.text.Utilities;
@@ -58,6 +60,19 @@ public class TestMain {
 		b.setV3("3");
 		
 		System.out.println("========================================================");
+		
+		List aslist = Arrays.asList("test1","test2","test3","test4","test5");
+
+		TestMethodReferance tm = new TestMethodReferance();
+		
+		Function<String, String> asSS = tm::tests;
+		Function<Integer,String> asIS = tm::convertString;
+		
+		System.out.println("answer : "+asSS.apply("woman"));
+		System.out.println("answer : "+asIS.apply(123));
+		
+ 		
+		
 		
 	}
 
