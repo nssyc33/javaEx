@@ -41,10 +41,11 @@ public class TestMain {
 			String regex = "([\\w]+@[\\w]+.com)";
 			
 			Pattern p = Pattern.compile(regex);
-			Matcher m = p.matcher(targetMail);
+			Matcher m = p.matcher(targetMail); 
 			while(m.find()) {
 				System.out.println(m.group());
 			}
+			
 		}
 	}
 	
