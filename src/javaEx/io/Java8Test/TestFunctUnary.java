@@ -11,7 +11,7 @@ public class TestFunctUnary {
 	}
 	
 	protected void test() {
-		Function<Integer, String> fc = (p)-> String.valueOf(p);
+		Function<Integer, String> fc = (p)-> String.valueOf(p)+" test ¿‘¥œ¥Ÿ.";
 		System.out.println(fc.apply(100));
 		
 		UnaryOperator<Integer> uo = (p)-> p;
